@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 2em;
+}
+  
+/* even though there are NO <a> anchor tags in this app -- 
+<Link> are a subclass of <a> tag */
+.nav a {
+color: white;
+text-decoration: none;
+}
