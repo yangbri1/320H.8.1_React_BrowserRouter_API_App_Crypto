@@ -17,8 +17,8 @@ export default function Price(){
     const { symbol } = useParams();
 
     // API key from coinapi.io
-    const apiKey = '735FA548-9556-41EC-84B7-F8A5F3E88219';
-    // const apiKey = import.meta.env.API_KEY;
+    // can't really store API_KEY in .env in React ... replace apiKey below w/ personalize API key for full functionality
+    const apiKey = import.meta.env.API_KEY;
 
     // Using the other two variables to create our URL.
     const url = `http://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`
